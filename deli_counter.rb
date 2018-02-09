@@ -4,8 +4,8 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     katz_deli.each_with_index { |name,index|
-      num = (index+1).join
-      katz_deli[index] = num + "." + " " + katz_deli[index]
+      num = (index+1).to_s
+      katz_deli[index] = num << "." << " " << katz_deli[index]
     }
     #katz_deli.join(" ")
    puts "The line is currently:#{katz_deli}"
