@@ -3,7 +3,11 @@ def line(katz_deli)
   if katz_deli.length < 1
     puts "The line is currently empty."
   else
-
+    katz_deli.each_with_index { |name,index|
+      katz_deli[index] = (index+1)<<"."<<" "<<katz_deli[index]    
+    }
+    katz_deli.join(" ")
+   puts "The line is currently: #{katz_deli}"
   end
 end
 
