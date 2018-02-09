@@ -8,7 +8,7 @@ def line(katz_deli)
       katz_deli[index] = num << "." << " " << katz_deli[index]
     }
   #  katz_deli.join(" ")
-   puts "The line is currently:#{katz_deli}"
+   puts katz_deli
   end
 end
 
