@@ -9,7 +9,7 @@ def line(katz_deli)
       katz_deli[index] = num << "." << " " << katz_deli[index]
       new_string = new_string + katz_deli[index]
     }
-   puts new_string
+   puts "The line is currently: #{new_string} "
   end
 end
 
