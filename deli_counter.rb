@@ -7,8 +7,8 @@ def line(katz_deli)
       num = index+1
       katz_deli[index] = num.to_s+ "." + " " + katz_deli[index]
     }
-    katz_deli.join(" ")
-   puts "The line is currently:"katz_deli
+    #katz_deli.join(" ")
+   puts "The line is currently:katz_deli"
   end
 end
 
