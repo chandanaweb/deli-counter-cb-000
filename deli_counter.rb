@@ -1,12 +1,12 @@
 katz_deli = []
 def line(katz_deli)
+  new_string = ""
   if katz_deli.length < 1
     puts "The line is currently empty."
   else
     katz_deli.each_with_index { |name,index|
       num = (index+1).to_s
       katz_deli[index] = num << "." << " " << katz_deli[index]
-      new_string = ""
       new_string = new_string + katz_deli[index]
     }
    puts new_string
