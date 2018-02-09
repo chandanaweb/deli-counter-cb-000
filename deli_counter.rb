@@ -5,7 +5,7 @@ def line(katz_deli)
   else
     katz_deli.each_with_index { |name,index|
       num = index+1
-      katz_deli[index] = num.join+ "." + " " + katz_deli[index]
+      katz_deli[index] = num.to_s+ "." + " " + katz_deli[index]
     }
     katz_deli.join(" ")
    puts "The line is currently: #{katz_deli}"
