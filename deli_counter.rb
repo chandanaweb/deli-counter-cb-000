@@ -6,9 +6,10 @@ def line(katz_deli)
     katz_deli.each_with_index { |name,index|
       num = (index+1).to_s
       katz_deli[index] = num << "." << " " << katz_deli[index]
+      new_string = ""
+      new_string = new_string + katz_deli[index]
     }
-    katz_deli.join
-   puts katz_deli
+   puts new_string
   end
 end
 
